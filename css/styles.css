@@ -43,6 +43,7 @@ img {
     height: auto;
 }
 
+
 /* Botón general */
 .button {
     background-color: var(--color-font);
@@ -66,8 +67,9 @@ img {
 .container {
     width: 100%;
     height: auto;
-    padding: 1.5rem 10rem;
+    padding: 1.5rem 5rem;
 }
+
 
 /* Estilos al header */
 .header {
@@ -167,7 +169,7 @@ img {
 
 @media (max-width: 768px) {
     .header {
-        height: 60vh;
+        height: 85vh;
     }
     .header-nav {
         display: grid;
@@ -212,6 +214,7 @@ img {
 
 .title-offers {
     display: flex;
+    gap: 0.4rem;
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
@@ -222,7 +225,7 @@ img {
     justify-items: center;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.4rem;
-    margin: 3rem 0;
+    margin: var(--space-large) 0;
 }
 
 .card {
@@ -252,6 +255,10 @@ img {
         grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
         gap: 1.5rem;
     }
+
+    .title-offers {
+        flex-direction: column;
+    }
 }
 
 /* Estilos al hero de contacto */
@@ -263,7 +270,7 @@ img {
     height: 60vh;
     display: flex;
     flex-direction: column;
-    padding-top: var(--space-large);
+    padding: var(--space-medium);
     align-items: center;
     justify-content: center;
     gap: var(--space-medium);
@@ -294,6 +301,7 @@ img {
 .card-services {
     display: flex;
     justify-content: center;
+    margin-top: var(--space-large);
     align-items: start;
     text-align: center;
     gap: var(--space-large);
@@ -301,6 +309,7 @@ img {
 
 .section-services {
     background-color: var(--color-primary);
+    padding-bottom: 0.1rem;
 }
 
 @media (max-width: 768px) {
