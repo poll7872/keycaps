@@ -408,7 +408,7 @@ select {
     transform: translateY(-0.2rem); 
 }
 
-/* Responsive Design */
+/* Responsive al formulario de contacto */
 @media (max-width: 768px) {
     .form-contacto {
         padding: 1rem;
